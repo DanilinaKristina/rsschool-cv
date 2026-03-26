@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Kristina Danilina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></div>
+    <ul class="horizontal-list" id="menu">
+      <li><a href="#Skills" class="link-menu">Skills</a></li>
+      <li><a href="#Experience" class="link-menu">Experience</a></li>
+      <li><a href="#Projects" class="link-menu">Projects</a></li>
+      <li><a href="#code" class="link-menu">Code</a></li>
+      <li><a href="#languages" class="link-menu">Languages</a></li>
+    </ul>
+  </nav>
+
+  <section class="header_main">
+    <header>
+      <div class="name_photo"> 
+        <img class="Iam" src="me.jpg" alt="Kristina Danilina" onerror="this.src='ven.jpg'">
+        <h1 class="h1">Kristina<br>Danilina</h1>
+        <h2>Front-end Developer</h2>
+        
+        <ul class="contacts">
+          <li class="social"><a href="https://github.com/DanilinaKristina" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+          <li class="social"><a href="https://t.me/krissti2" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a></li>
+          <li class="social"><a href="https://www.instagram.com/snowflakekristi/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="Skills" id="Skills">
+        <h2>Skills</h2>
+        <ul class="list_skills">
+          <li class="skill-card">HTML</li>
+          <li class="skill-card">CSS</li>
+          <li class="skill-card">JS</li>
+          <li class="skill-card">Java</li>
+          <li class="skill-card">SQL</li>
+          <li class="skill-card">JSP</li>
+          <li class="skill-card">Figma</li>
+        </ul>
+      </section>
+
+      <section class="Projects" id="Projects">
+        <h2>Projects</h2>
+        <div class="pgojects_ex">
+          <div class="proj_example">
+            <img class="site" src="/venom.jpg" alt="Venom-site">
+            <div class="card-hover">
+              <a class="go_to" href="https://danilinakristina.github.io/Venom/">Visit Site</a>
+            </div>
+          </div>
+          <div class="proj_example">
+            <img class="site" src="/find.png" alt="find-site">
+            <div class="card-hover">
+              <a class="go_to" href="https://danilinakristina.github.io/findyoujob/">Visit Site</a>
+            </div>
+          </div>
+          <div class="proj_example">
+            <img class="site" src="/battle.png" alt="battle">
+            <div class="card-hover">
+              <a class="go_to" href="https://DanilinaKristina.github.io/not-fight-club">Visit Site</a>
+            </div>
+          </div>
+          <div class="proj_example">
+            <img class="site" src="/museum.png" alt="battle">
+            <div class="card-hover">
+              <a class="go_to" href="https://rolling-scopes-school.github.io/danilinakristina-JSFEPRESCHOOL2025Q2/museum/">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Code_Example" id="code">
+        <h2>Code Example</h2>
+        <pre><code><span class="blue">String</span>[] Max = MaxDepositAmount.split(","); 
+<span class="operator">if</span> (MaxDepositAmount.equals("")){
+  MaxDepositAmount = "";
+} <span class="operator">else</span> {
+  <span class="operator">for</span> (<span class="blue">String</span> part : Max) {
+    <span class="operator">if</span>(part.startsWith(Currency)) {
+      <span class="blue">String</span> numberStr = part.replaceAll(Currency, "").trim();
+      MaxDepositAmount = "" + numberStr;
+    }
+  }
+}</code></pre>
+      </section>
+
+      <section class="Education" id="education">
+        <h2>Education</h2>
+        <div class="education-box">
+          <strong>BELARUSIAN STATE UNIVERSITY, 2014-2019</strong><br>
+          Diploma profession: mechanic mathematician applied
+        </div>
+        <div class="education-box">
+          <strong>Course Java by Eugene Hoza, 2023</strong><br>
+          <a class="link-menu" href="https://github.com/eugenehoza" target="_blank" style="font-size: 12px;">Go to GitHub</a>
+        </div>
+      </section>
+
+      <section class="Languages" id="languages">
+        <h2>Languages</h2>
+        <div class="education-box">
+          <h3 style="margin-top:0; color: var(--primary);">English</h3>
+          <span class="level">Reading: Intermediate</span>
+          <span class="level">Writing: Intermediate</span>
+          <span class="level">Speaking: Intermediate</span>
+        </div>
+      </section>
+
+      <section class="work_experience" id="Experience">
+        <h2>Work Experience</h2>
+        <div class="work_box">
+          <strong>Software Engineer</strong><br>
+          <a class="link-menu" href="https://www.vebtech.by/" style="text-transform: none; letter-spacing: 0;">ООО "VEB TECHNOLOGY"</a><br>
+          February 2019 - Present
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <footer>
+    <p><strong>Kristina Danilina</strong> — Front-end developer</p>
+    <p>
+      <a class="link-menu" href="mailto:hachkova.new@gmail.com">chachkova.new@gmail.com</a> |
+      <a class="link-menu" href="https://t.me/krissti2" target="_blank">Telegram</a>
+    </p>
+    <img class="logo_dev" src="rs-school-logo.svg" alt="RS School">
+    <p style="font-size: 12px; margin-top: 10px;">2025</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    // Close menu on click link
+    document.querySelectorAll('.link-menu').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
